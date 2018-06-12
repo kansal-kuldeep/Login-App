@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app="LoginApp">
+
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
+  </head>
+
+  <body>
+
+    <div class ="page-header">
+      <h1 class="text-danger">Welcome to the Login App!</h1><ng-include src="'src/templates/user-status-ptl.html'"></ng-include>
+    </div>
+    <div>
+      <ng-view></ng-view>
+    </div>
+
+    <!--angular-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-route.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-mocks.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-cookies.js"></script>
+
+    <!--modules-->
+    <script src="app.js"></script>
+
+    <!--controllers-->
+    <script src="src/controllers/home-ctrl.js"></script>
+    <script src="src/controllers/login-ctrl.js"></script>
+    <script src="src/controllers/user-page-ctrl.js"></script>
+    <script src="src/controllers/user-status-ctrl.js"></script>
+
+    <!--services-->
+    <script src="src/services/authentication-svc.js"></script>
+
+    <!--directives-->
+    <script src="src/directives/loader-dir.js "></script>
+
+  </body>
+</html>
